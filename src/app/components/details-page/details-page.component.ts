@@ -29,7 +29,6 @@ export class DetailsPageComponent implements OnInit {
     this.activatedRoute.url.subscribe((params) => {
       this.mediaType = params[0].path;
     });
-    console.log(this.mediaType);
     if (this.mediaType === 'movie') {
       this.getMovieDetails(this.mediaId!);
     } else {

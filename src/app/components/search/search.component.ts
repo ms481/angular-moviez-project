@@ -41,11 +41,9 @@ export class SearchComponent {
 
   search() {
     if (this.searchQuery.length > 3) {
-      this.searchResult$ = this.tmdb.search(this.searchQuery).pipe(
-        debounceTime(100),
-        distinctUntilChanged(),
-        tap((res) => console.log('search', res))
-      );
+      this.searchResult$ = this.tmdb
+        .search(this.searchQuery)
+        .pipe(debounceTime(100), distinctUntilChanged());
       this.searchResult$.subscribe((res) => {
         this.searchResult = res.results;
       });
