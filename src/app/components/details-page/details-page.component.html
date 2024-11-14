@@ -1,0 +1,20 @@
+<ng-container *ngIf="isReady; else workInProgress">
+  <div class="details" *ngIf="movieDetails">
+    <img src="{{ imgBaseSrc }}{{ movieDetails.poster_path }}" alt="" />
+    <div>
+      <h1 class="details__title">{{ movieDetails.title }}</h1>
+      <div>
+        <span>{{ movieDetails.release_date | date : "MMM dd, yyyy" }}</span>
+        &bull; @for (genre of movieDetails.genres; track genre.id; let isLast =
+        $last) {
+        <span>{{ genre.name }}{{ isLast ? "" : "," }} </span>
+        }
+      </div>
+
+      <h3>Overview</h3>
+      <p class="details__description">{{ movieDetails.overview }}</p>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #workInProgress> Work in progres... </ng-template>

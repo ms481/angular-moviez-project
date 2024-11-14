@@ -1,0 +1,9 @@
+<div class="title-cell">
+  <img src="{{ imgSrc() }}" alt="" />
+  <div class="title-cell__info">
+    <h2 class="title-cell__title">
+      <a [routerLink]="[path(), id()]">{{ title() }}</a>
+    </h2>
+    <span>{{ releaseDate() | date : "MMM dd, yyyy" }}</span>
+  </div>
+</div>

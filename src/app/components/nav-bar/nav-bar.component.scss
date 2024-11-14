@@ -1,0 +1,20 @@
+.nav-bar {
+  display: flex;
+  padding: 0px 10%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+
+  &__menu a {
+    font-size: larger;
+    color: white;
+    border-bottom: 2px solid transparent;
+    margin-right: 25px;
+  }
+}
+
+.active-link {
+  border-bottom: 2px solid red !important;
+  border-radius: 0px;
+}

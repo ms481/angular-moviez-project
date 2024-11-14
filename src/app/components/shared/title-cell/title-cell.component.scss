@@ -1,0 +1,9 @@
+.title-cell {
+  display: flex;
+  gap: 20px;
+
+  &__title a {
+    color: black;
+    text-decoration: none;
+  }
+}
