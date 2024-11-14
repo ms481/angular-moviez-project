@@ -7,6 +7,9 @@ If you want to run this app, first register and get an api token from themoviedb
 
 +++ The project is not complete, it's still work in progress! +++
 
+![2024-11-14_23h10_46](https://github.com/user-attachments/assets/77f64dda-b671-41dc-9389-ba61a47838ac)
+![2024-11-14_23h10_57](https://github.com/user-attachments/assets/e3f384f2-556d-4b1f-827a-17a3f486a884)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
 ## Development server
